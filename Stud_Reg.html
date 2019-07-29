@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Student Registration</title>
+</head>
+<body>
+	<fieldset>
+	<legend><b>Registration Details</b></legend>
+	<form>
+	
+	<table>
+	<tr>
+		<td>First Name: <input typt="text" name=fname placeholder="Enter your First Name" required></td>
+		<td>Middle Name: <input typt="text" name=mname placeholder="Enter your Middle Name" required></td>
+		<td>Last Name: <input typt="text" name=lname placeholder="Enter your Last Name" required></td>	
+	</tr>
+	<tr>
+		<td>Date of Birth: <input type="date" required></td>
+		<td>Age(till date): <input type="number" min="18" max="30" value="18" required></td>
+		<td>Gender: <input type="radio" name="gender" value="Male" checked>Male<input type="radio" name="gender" value="Female">Female<input type="radio" name="gender" value="Other">Other</td>
+	</tr>
+	<tr>
+		<td>Email Id: <input type="email" name="email" placeholder="Please enter valid Email Id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+		<td>Student's Mobile No: <input type="integer" name="mno" placeholder="Please enter valid number" pattern="[7-9]{1}[0-9]{9}" required></td>
+	</tr>
+	<tr>
+		<td>Permanant Address: <textarea rows="1" cols="30" placeholder="Enter complete address" required></textarea></td>
+	</tr>
+	<tr>
+		<td>Upload Documents here <small>(First 2 Documents are Mandatory)</small></td>
+	</tr>
+	<tr>
+		<td>1.Passport-Size Photo: <input type="file" required></td>
+	</tr>
+	<tr>
+		<td>2.Aadhar Card: <input type="file" required></td>
+	</tr>
+	<tr>
+		<td>3.Pan Card: <input type="file"></td>
+	</tr>
+	</table>
+	
+	<center>
+	<button>Submit</button>
+	</center>
+	</form>
+	</fieldset>
+</body>
+</html>
